@@ -1,7 +1,8 @@
 module coins::coins;
 
-use std::option::some;
+use std::option;
 use sui::coin::{Self, TreasuryCap, create_currency};
+use sui::transfer;
 use sui::url::new_unsafe_from_bytes;
 
 const TOTAL_COINS: u64 = 1_000_000_000_000_000_000;
